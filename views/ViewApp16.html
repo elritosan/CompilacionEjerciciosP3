@@ -1,0 +1,71 @@
+<div> <!-- Ejercicio 16 -->
+    <div class="modal" tabindex="-1" role="dialog" id="ventanamodalApp16">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Ejercicio 16</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <fieldset>
+                        <legend>Editor De Texto</legend>
+                        <div class="ContenedorMenuEditorTexto">
+                            <ul class="MenuEditorTexto">
+                                <li><button onclick="formatText('bold')" class="fa-solid fa-bold"></button></li>
+                                <li><button onclick="formatText('italic')" class="fa-solid fa-italic"></button></li>
+                                <li><button onclick="alignText('left')" class="fa-solid fa-align-left"></button></li>
+                                <li><button onclick="alignText('center')" class="fa-solid fa-align-center"></button>
+                                </li>
+                                <li><button onclick="alignText('right')" class="fa-solid fa-align-right"></button></li>
+                                <li><input type="color" class="BotonEjecutar" id="colorPicker"
+                                        oninput="changeTextColor()"></li>
+                                <li>
+                                    <div class="ComboBoxEditorTexto">
+                                        <select id="fontSizeTxt" oninput="changeFontSize()">
+                                            <option value="8">Muy pequeño (8pt)</option>
+                                            <option value="10">Pequeño (10pt)</option>
+                                            <option value="12" selected>Normal (12pt)</option>
+                                            <option value="14">Mediano (14pt)</option>
+                                            <option value="16">Grande (16pt)</option>
+                                            <option value="18">Muy grande (18pt)</option>
+                                            <option value="24">Enorme (24pt)</option>
+                                            <!-- Agrega más opciones según sea necesario -->
+                                        </select>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="ComboBoxEditorTexto">
+                                        <select id="fontFamilyTxt" oninput="changeFontType()">
+                                            <option value="Arial">Arial</option>
+                                            <option value="Times New Roman">Times New Roman</option>
+                                            <option value="Courier New">Courier New</option>
+                                            <option value="Verdana">Verdana</option>
+                                            <option value="Georgia">Georgia</option>
+                                            <option value="Helvetica">Helvetica</option>
+                                            <option value="Tahoma">Tahoma</option>
+                                            <option value="Palatino">Palatino</option>
+                                            <option value="Comic Sans MS">Comic Sans MS</option>
+                                            <option value="Garamond">Garamond</option>
+                                            <option value="Lucida Sans Unicode">Lucida Sans Unicode</option>
+                                            <option value="Impact">Impact</option>
+                                            <option value="Trebuchet MS">Trebuchet MS</option>
+                                            <option value="Century Gothic">Century Gothic</option>
+                                            <option value="Book Antiqua">Book Antiqua</option>
+                                            <!-- Agrega más opciones según sea necesario -->
+                                        </select>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <hr>
+                        <div id="textEditor" contenteditable="true"></div>
+                    </fieldset>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <!-- <button type="button" class="btn btn-primary">Guardar Cambios</button> -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

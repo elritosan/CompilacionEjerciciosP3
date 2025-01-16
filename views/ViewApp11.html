@@ -1,0 +1,30 @@
+<div> <!-- Ejercicio 11 -->
+    <div class="modal" tabindex="-1" role="dialog" id="ventanamodalApp11">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Ejercicio 11</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <fieldset>
+                        <legend>Mostrar Piramide</legend>
+                        <form action="" onsubmit="return AnularRefreshSubmit()">
+                            <label for="NumFilasP">Número de Filas de la Piramide (1 al 13):</label>
+                            <input type="text" id="NumFilasP" maxlength="2"
+                                onkeypress="return KeyPressEnterosPositivos(event)" pattern="[0-9]+"
+                                title="Por favor, ingrese solo números enteros positivos" required>
+                            <input type="submit" class="BotonEjecutar" value="Imprimir Piramide"
+                                onclick="GetApp11()"></input>
+                            <div class="DivResultado" id="ResultadoApp11"></div>
+                        </form>
+                    </fieldset>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <!-- <button type="button" class="btn btn-primary">Guardar Cambios</button> -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

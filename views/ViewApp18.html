@@ -1,0 +1,43 @@
+<div> <!-- Ejercicio 18 -->
+    <div class="modal" tabindex="-1" role="dialog" id="ventanamodalApp18">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Ejercicio 18</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <fieldset>
+                        <legend>Operaciones En La Matriz</legend>
+                        <form action="" onsubmit="return AnularRefreshSubmit()">
+                            <div class="menu_horizontal">
+                                <div>
+                                    <label for="">Número De Filas:</label>
+                                    <input type="text" id="FilasMatriz" placeholder="Ingresa un Número" maxlength="2"
+                                        oninput="DimensionarMatriz()"
+                                        onkeypress="return KeyPressEnterosPositivos(event)" pattern="[0-9]+"
+                                        title="Por favor, ingrese solo números enteros positivos" required>
+                                </div>
+                                <div>
+                                    <label for="">Número De Columnas:</label>
+                                    <input type="text" id="ColumnasMatriz" placeholder="Ingresa un Número" maxlength="1"
+                                        oninput="DimensionarMatriz()"
+                                        onkeypress="return KeyPressEnterosPositivos(event)" pattern="[0-9]+"
+                                        title="Por favor, ingrese solo números enteros positivos" required>
+                                </div>
+                            </div>
+                            <div id="MatrizApp18"></div>
+                            <input type="button" class="BotonEjecutar" value="Calcular Operaciones"
+                                onclick="GetApp18()"></input>
+                            <div class="DivResultado" id="ResultadoApp18"></div>
+                        </form>
+                    </fieldset>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <!-- <button type="button" class="btn btn-primary">Guardar Cambios</button> -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

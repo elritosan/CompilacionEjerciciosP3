@@ -1,0 +1,38 @@
+<div> <!-- Ejercicio 08 -->
+    <div class="modal" tabindex="-1" role="dialog" id="ventanamodalApp08">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Ejercicio 08</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <fieldset>
+                        <legend>Menor De Tres Números Reales</legend>
+                        <form action="" onsubmit="return AnularRefreshSubmit()">
+                            <label for="Valor1">Ingrese el 1er número:</label>
+                            <input type="text" id="Valor1" placeholder="Ingrese el 1er número" maxlength="5"
+                                onkeypress="return KeyPressTodosReales(event)" pattern="-?([0-9]+(\.[0-9]*)?|\.[0-9]+)"
+                                title="Por favor, ingrese solo números reales" required>
+                            <label for="Valor2">Ingrese el 2do número:</label>
+                            <input type="text" id="Valor2" placeholder="Ingrese el 2do número" maxlength="5"
+                                onkeypress="return KeyPressTodosReales(event)" pattern="-?([0-9]+(\.[0-9]*)?|\.[0-9]+)"
+                                title="Por favor, ingrese solo números reales" required>
+                            <label for="Valor3">Ingrese el 3er número:</label>
+                            <input type="text" id="Valor3" placeholder="Ingrese el 3er número" maxlength="5"
+                                onkeypress="return KeyPressTodosReales(event)" pattern="-?([0-9]+(\.[0-9]*)?|\.[0-9]+)"
+                                title="Por favor, ingrese solo números reales" required>
+                            <input type="submit" class="BotonEjecutar" value="Encontrar el Menor"
+                                onclick="GetApp08()"></input>
+                            <div class="DivResultado" id="ResultadoApp08"></div>
+                        </form>
+                    </fieldset>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <!-- <button type="button" class="btn btn-primary">Guardar Cambios</button> -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

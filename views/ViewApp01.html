@@ -1,0 +1,34 @@
+<div> <!-- Ejercicio 01 -->
+  <div class="modal" tabindex="-1" role="dialog" id="ventanamodalApp01">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Ejercicio 01</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <fieldset>
+            <legend>Ángulo De Incidencia Del Sol</legend>
+            <form id="Formularios" action="" onsubmit="return AnularRefreshSubmit()">
+              <label for="AlturaPoste">Altura (metros) del poste (h):</label>
+              <input type="text" id="AlturaPoste" placeholder="Altura en metros" maxlength="5"
+                onkeypress="return KeyPressRealesPositivos(event)" pattern="[0-9]+(\.[0-9]*)?|\.[0-9]+?"
+                title="Por favor, ingrese solo números reales positivos" required>
+              <label for="LongitudSombra">Longitud (metros) de la sombra (s):</label>
+              <input type="text" id="LongitudSombra" placeholder="Longitud en metros" maxlength="5"
+                onkeypress="return KeyPressRealesPositivos(event)" pattern="[0-9]+(\.[0-9]*)?|\.[0-9]+?"
+                title="Por favor, ingrese solo números reales positivos" required>
+              <input type="submit" id="BotonEjecutar01" class="BotonEjecutar" value="Calcular Ángulo"
+                onclick="GetApp01()"></input>
+              <div class="DivResultado" id="ResultadoApp01"></div>
+            </form>
+          </fieldset>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          <!-- <button type="button" class="btn btn-primary">Guardar Cambios</button> -->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

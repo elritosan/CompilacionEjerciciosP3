@@ -1,0 +1,33 @@
+<div> <!-- Ejercicio 07 -->
+    <div class="modal" tabindex="-1" role="dialog" id="ventanamodalApp07">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Ejercicio 07</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <fieldset>
+                        <legend>Conversor Código MORSE</legend>
+                        <form action="" onsubmit="return AnularRefreshSubmit()">
+                            <label for="CadenaTexto">Ingresar Texto:</label>
+                            <input type="text" id="CadenaTexto" onkeypress="return KeyPressMorse(event)"
+                                pattern='[A-Za-z0-9/ ]+' required></input>
+                            <div class="menu_horizontal">
+                                <input type="submit" class="BotonEjecutar" value="Convertir a MORSE"
+                                    onclick="GetApp07_TM()"></input>
+                                <input type="submit" class="BotonEjecutar" value="Convertir a TEXTO"
+                                    onclick="GetApp07_MT()"></input>
+                            </div>
+                            <div class="DivResultado" id="ResultadoApp07"></div>
+                        </form>
+                    </fieldset>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <!-- <button type="button" class="btn btn-primary">Guardar Cambios</button> -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
