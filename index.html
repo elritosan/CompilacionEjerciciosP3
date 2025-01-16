@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <script src="https://kit.fontawesome.com/49ed2ef561.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="styles/estilosFormularios.css">
+    <link rel="stylesheet" href="styles/estilosGlobal.css">
+    <link rel="stylesheet" href="styles/estilosMenuDesplegable.css">
+    <link rel="stylesheet" href="styles/estilosPiePagina.css">
+    <link rel="stylesheet" href="styles/estilosEditorTexto.css">
+
+    <script src="script/Event/AppEventos.js"></script>
+
+    <script src="script/JavaScript/App01.js"></script>
+    <script src="script/JavaScript/App02.js"></script>
+    <script src="script/JavaScript/App03.js"></script>
+    <script src="script/JavaScript/App04.js"></script>
+    <script src="script/JavaScript/App05.js"></script>
+    <script src="script/JavaScript/App06.js"></script>
+    <script src="script/JavaScript/App07.js"></script>
+    <script src="script/JavaScript/App08.js"></script>
+    <script src="script/JavaScript/App09.js"></script>
+    <script src="script/JavaScript/App10.js"></script>
+    <script src="script/JavaScript/App11.js"></script>
+    <script src="script/JavaScript/App12.js"></script>
+    <script src="script/JavaScript/App13.js"></script>
+    <script src="script/JavaScript/App14.js"></script>
+    <script src="script/JavaScript/App15.js"></script>
+    <script src="script/JavaScript/App16.js"></script>
+    <script src="script/JavaScript/App17.js"></script>
+    <script src="script/JavaScript/App18.js"></script>
+
+    <title>Aplicaciones - 7228</title>
+</head>
+<body>
+
+    <div> <!-- Ventalas Modales Ejercicios -->
+        <div> <!-- Ejercicio 01 -->
+            <div class="modal" tabindex="-1" role="dialog" id="ventanamodalApp01">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title">Ejercicio 01</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <fieldset>
+                            <legend>Ángulo De Incidencia Del Sol</legend>
+                            <form id="Formularios" action="" onsubmit="return AnularRefreshSubmit()">
+                                <label for="AlturaPoste">Altura (metros) del poste (h):</label>
+                                <input type="text" id="AlturaPoste" placeholder="Altura en metros" maxlength="5" onkeypress="return KeyPressRealesPositivos(event)" pattern="[0-9]+(\.[0-9]*)?|\.[0-9]+?" title="Por favor, ingrese solo números reales positivos" required>
+                                <label for="LongitudSombra">Longitud (metros) de la sombra (s):</label>
+                                <input type="text" id="LongitudSombra" placeholder="Longitud en metros" maxlength="5" onkeypress="return KeyPressRealesPositivos(event)" pattern="[0-9]+(\.[0-9]*)?|\.[0-9]+?"  title="Por favor, ingrese solo números reales positivos" required>
+                                <input type="submit" id="BotonEjecutar01" class="BotonEjecutar" value="Calcular Ángulo" onclick="GetApp01()"></input>
+                                <div class="DivResultado" id="ResultadoApp01"></div>
+                            </form>
+                        </fieldset>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                      <!-- <button type="button" class="btn btn-primary">Guardar Cambios</button> -->
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+    
+        <div> <!-- Ejercicio 02 -->
+            <div class="modal" tabindex="-1" role="dialog" id="ventanamodalApp02">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title">Ejercicio 02</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <fieldset>
+                            <legend>Volumen De Un Depósito Cilindrico</legend>
+                            <form action="" onsubmit="return AnularRefreshSubmit()">
+                                <label for="RadioCilindro">Radio de la base:</label>
+                                <input type="text" id="RadioCilindro" placeholder="Radio en metros" maxlength="5" onkeypress="return KeyPressRealesPositivos(event)" pattern="[0-9]+(\.[0-9]*)?|\.[0-9]+?" title="Por favor, ingrese solo números reales positivos" required>
+                                <label for="AlturaCilindro">Altura del depósito:</label>
+                                <input type="text" id="AlturaCilindro" placeholder="Altura en metros" maxlength="5" onkeypress="return KeyPressRealesPositivos(event)" pattern="[0-9]+(\.[0-9]*)?|\.[0-9]+?" title="Por favor, ingrese solo números reales positivos" required>
+                                <input type="submit" class="BotonEjecutar" value="Calcular Volumen" onclick="GetApp02()"></input>
+                                <div class="DivResultado" id="ResultadoApp02"></div>
+                            </form>
+                        </fieldset>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                      <!-- <button type="button" class="btn btn-primary">Guardar Cambios</button> -->
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+        
+        <div> <!-- Ejercicio 03 -->
+            <div class="modal" tabindex="-1" role="dialog" id="ventanamodalApp03">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title">Ejercicio 03</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <fieldset>
+                            <legend>Calcular Ganancias Del Grano</legend>
+                            <form action="" onsubmit="return AnularRefreshSubmit()">
+                                <label for="KilosGrano">Kilos de grano cosechados:</label>
+                                <input type="text" id="KilosGrano" placeholder="Kilos" maxlength="5" onkeypress="return KeyPressEnterosPositivos(event)" pattern="[0-9]+" title="Por favor, ingrese solo números enteros positivos" required>
+                                <label for="PrecioGrano">Precio de venta por kilo:</label>
+                                <input type="text" id="PrecioGrano" placeholder="Precio en dólares por kilo" maxlength="5" onkeypress="return KeyPressRealesPositivos(event)" pattern="[0-9]+(\.[0-9]*)?|\.[0-9]+?" title="Por favor, ingrese solo números reales positivos" required>
+                                <input type="submit" class="BotonEjecutar" value="Calcular Ganancias" onclick="GetApp03()"></input>
+                                <div class="DivResultado" id="ResultadoApp03"></div>
+                            </form>
+                        </fieldset>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                      <!-- <button type="button" class="btn btn-primary">Guardar Cambios</button> -->
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+        
+        <div> <!-- Ejercicio 04 -->
+            <div class="modal" tabindex="-1" role="dialog" id="ventanamodalApp04">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title">Ejercicio 04</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <fieldset>
+                            <legend>Calcular el 6to Número</legend>
+                            <form action="" onsubmit="return AnularRefreshSubmit()">
+                                <label for="KilosGrano">Ingresar 1er Número:</label>
+                                <input type="text" id="Num01" placeholder="Entero Positivo" maxlength="5" onkeypress="return KeyPressEnterosPositivos(event)" pattern="[0-9]+" title="Por favor, ingrese solo números enteros positivos" required>
+                                <label for="KilosGrano">Ingresar 2do Número:</label>
+                                <input type="text" id="Num02" placeholder="Entero Positivo" maxlength="5" onkeypress="return KeyPressEnterosPositivos(event)" pattern="[0-9]+" title="Por favor, ingrese solo números enteros positivos" required>
+                                <label for="KilosGrano">Ingresar 3er Número:</label>
+                                <input type="text" id="Num03" placeholder="Entero Positivo" maxlength="5" onkeypress="return KeyPressEnterosPositivos(event)" pattern="[0-9]+" title="Por favor, ingrese solo números enteros positivos" required>
+                                <label for="KilosGrano">Ingresar 4to Número:</label>
+                                <input type="text" id="Num04" placeholder="Entero Positivo" maxlength="5" onkeypress="return KeyPressEnterosPositivos(event)" pattern="[0-9]+" title="Por favor, ingrese solo números enteros positivos" required>
+                                <label for="KilosGrano">Ingresar 5to Número:</label>
+                                <input type="text" id="Num05" placeholder="Entero Positivo" maxlength="5" onkeypress="return KeyPressEnterosPositivos(event)" pattern="[0-9]+" title="Por favor, ingrese solo números enteros positivos" required>
+                                <input type="submit" class="BotonEjecutar" value="Calcular Sexto Número" onclick="GetApp04()"></input>
+                                <div class="DivResultado" id="ResultadoApp04"></div>
+                            </form>
+                        </fieldset>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                      <!-- <button type="button" class="btn btn-primary">Guardar Cambios</button> -->
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+        
+        <div> <!-- Ejercicio 05 -->
+            <div class="modal" tabindex="-1" role="dialog" id="ventanamodalApp05">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title">Ejercicio 05</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <fieldset>
+                            <legend>Resistencia Equivalente En Paralelo</legend>
+                            <form action="" onsubmit="return AnularRefreshSubmit()">
+                                <label for="R1">Valor de la Resistencia 1 (ohmios):</label>
+                                <input type="text" id="R1" placeholder="Ingrese el valor de R1" maxlength="5" onkeypress="return KeyPressRealesPositivos(event)" pattern="[0-9]+(\.[0-9]*)?|\.[0-9]+?" title="Por favor, ingrese solo números reales positivos" required>
+                                <label for="R2">Valor de la Resistencia 2 (ohmios):</label>
+                                <input type="text" id="R2" placeholder="Ingrese el valor de R2" maxlength="5" onkeypress="return KeyPressRealesPositivos(event)" pattern="[0-9]+(\.[0-9]*)?|\.[0-9]+?" title="Por favor, ingrese solo números reales positivos" required>
+                                <input type="submit" class="BotonEjecutar" value="Calcular Resistencia Equivalente" onclick="GetApp05()"></input>
+                                <div class="DivResultado" id="ResultadoApp05"></div>
+                            </form>
+                        </fieldset>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                      <!-- <button type="button" class="btn btn-primary">Guardar Cambios</button> -->
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+        
+        <div> <!-- Ejercicio 06 -->
+            <div class="modal" tabindex="-1" role="dialog" id="ventanamodalApp06">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title">Ejercicio 06</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <fieldset>
+                            <legend>Analizar Un Número</legend>
+                            <form action="" onsubmit="return AnularRefreshSubmit()">
+                                <label for="number">Ingrese un número:</label>
+                                <input type="text" id="ValorN" placeholder="Ingrese un número" maxlength="5" onkeypress="return KeyPressTodosReales(event)" pattern="-?([0-9]+(\.[0-9]*)?|\.[0-9]+)" title="Por favor, ingrese solo números reales" required>
+                                <input type="submit" class="BotonEjecutar" value="Analizar Número" onclick="GetApp06()"></input>
+                                <div class="DivResultado" id="ResultadoApp06"></div>
+                            </form>
+                        </fieldset>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                      <!-- <button type="button" class="btn btn-primary">Guardar Cambios</button> -->
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+        
+        <div> <!-- Ejercicio 07 -->
+            <div class="modal" tabindex="-1" role="dialog" id="ventanamodalApp07">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title">Ejercicio 07</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <fieldset>
+                            <legend>Conversor Código MORSE</legend>
+                            <form action="" onsubmit="return AnularRefreshSubmit()">
+                                <label for="CadenaTexto">Ingresar Texto:</label>
+                                <input type="text" id="CadenaTexto" onkeypress="return KeyPressMorse(event)" pattern='[A-Za-z0-9/ ]+' required></input>
+                                <div class="menu_horizontal">
+                                    <input type="submit" class="BotonEjecutar" value="Convertir a MORSE" onclick="GetApp07_TM()"></input>
+                                    <input type="submit" class="BotonEjecutar" value="Convertir a TEXTO" onclick="GetApp07_MT()"></input>
+                                </div>
+                                <div class="DivResultado" id="ResultadoApp07"></div>
+                            </form>
+                        </fieldset>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                      <!-- <button type="button" class="btn btn-primary">Guardar Cambios</button> -->
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+        
+        <div> <!-- Ejercicio 08 -->
+            <div class="modal" tabindex="-1" role="dialog" id="ventanamodalApp08">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title">Ejercicio 08</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <fieldset>
+                            <legend>Menor De Tres Números Reales</legend>
+                            <form action="" onsubmit="return AnularRefreshSubmit()">
+                                <label for="Valor1">Ingrese el 1er número:</label>
+                                <input type="text" id="Valor1" placeholder="Ingrese el 1er número" maxlength="5" onkeypress="return KeyPressTodosReales(event)" pattern="-?([0-9]+(\.[0-9]*)?|\.[0-9]+)" title="Por favor, ingrese solo números reales" required>                              
+                                <label for="Valor2">Ingrese el 2do número:</label>
+                                <input type="text" id="Valor2" placeholder="Ingrese el 2do número" maxlength="5" onkeypress="return KeyPressTodosReales(event)" pattern="-?([0-9]+(\.[0-9]*)?|\.[0-9]+)" title="Por favor, ingrese solo números reales" required>                            
+                                <label for="Valor3">Ingrese el 3er número:</label>
+                                <input type="text" id="Valor3" placeholder="Ingrese el 3er número" maxlength="5" onkeypress="return KeyPressTodosReales(event)" pattern="-?([0-9]+(\.[0-9]*)?|\.[0-9]+)" title="Por favor, ingrese solo números reales" required>
+                                <input type="submit" class="BotonEjecutar" value="Encontrar el Menor" onclick="GetApp08()"></input>
+                                <div class="DivResultado" id="ResultadoApp08"></div>
+                            </form>
+                        </fieldset>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                      <!-- <button type="button" class="btn btn-primary">Guardar Cambios</button> -->
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+        
+        <div> <!-- Ejercicio 09 -->
+            <div class="modal" tabindex="-1" role="dialog" id="ventanamodalApp09">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title">Ejercicio 09</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <fieldset>
+                            <legend>Operaciones Trigonométricas</legend>
+                            <form action="" onsubmit="return AnularRefreshSubmit()">
+                                <label for="AnguloIngresado">Función Trigonométrica:</label>
+                                <select id="OperacionT">
+                                    <option value="sin">Seno</option>
+                                    <option value="cos">Coseno</option>
+                                    <option value="tan">Tangente</option>
+                                </select>
+                                <label for="AnguloIngresado">Ingrese el ángulo en grados:</label>
+                                <input type="text" id="AnguloIngresado" placeholder="Ingrese el ángulo" maxlength="5" onkeypress="return KeyPressTodosReales(event)" pattern="-?([0-9]+(\.[0-9]*)?|\.[0-9]+)" title="Por favor, ingrese solo números reales" required>
+                                <label for="OperacionT">Seleccione la función trigonométrica:</label>
+                                <input type="submit" class="BotonEjecutar" value="Calcular" onclick="GetApp09()"></input>
+                                <div class="DivResultado" id="ResultadoApp09"></div>
+                            </form>
+                        </fieldset>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                      <!-- <button type="button" class="btn btn-primary">Guardar Cambios</button> -->
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+        
+        <div> <!-- Ejercicio 10 -->
+            <div class="modal" tabindex="-1" role="dialog" id="ventanamodalApp10">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title">Ejercicio 10</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <fieldset>
+                            <legend>Calcular Edad de Una Persona</legend>
+                            <form action="" onsubmit="return AnularRefreshSubmit()">
+                                <label for="FechaNacimiento">Ingrese la fecha de nacimiento:</label>
+                                <input type="date" id="FechaNacimiento" min="1900-01-01" max="2006-01-01" required>
+                                <input type="submit" class="BotonEjecutar" value="Calcular Edad" onclick="GetApp10()"></input>
+                                <div class="DivResultado" id="ResultadoApp10"></div>
+                            </form>
+                        </fieldset>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                      <!-- <button type="button" class="btn btn-primary">Guardar Cambios</button> -->
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+        
+        <div> <!-- Ejercicio 11 -->
+          <div class="modal" tabindex="-1" role="dialog" id="ventanamodalApp11">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Ejercicio 11</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <fieldset>
+                        <legend>Mostrar Piramide</legend>
+                        <form action="" onsubmit="return AnularRefreshSubmit()">
+                            <label for="NumFilasP">Número de Filas de la Piramide (1 al 13):</label>
+                            <input type="text" id="NumFilasP" maxlength="2" onkeypress="return KeyPressEnterosPositivos(event)" pattern="[0-9]+" title="Por favor, ingrese solo números enteros positivos" required>
+                            <input type="submit" class="BotonEjecutar" value="Imprimir Piramide" onclick="GetApp11()"></input>
+                            <div class="DivResultado" id="ResultadoApp11"></div>
+                        </form>
+                    </fieldset>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                  <!-- <button type="button" class="btn btn-primary">Guardar Cambios</button> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div> <!-- Ejercicio 12 -->
+          <div class="modal" tabindex="-1" role="dialog" id="ventanamodalApp12">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Ejercicio 12</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <fieldset>
+                        <legend>Adivina El Número</legend>
+                        <form action="" onsubmit="return AnularRefreshSubmit()">
+                          <label for="guess">Intenta adivinar el número (entre 1 y 10):</label>
+                          <input type="text" id="guess" placeholder="Ingresa tu número" maxlength="2" onkeypress="return KeyPressEnterosPositivos(event)" pattern="[0-9]+" title="Por favor, ingrese solo números enteros positivos" required>
+                          <input type="submit" class="BotonEjecutar" value="Comprobar" onclick="GetApp12()"></input>
+                          <div class="DivResultado" id="ResultadoApp12"></div>
+                        </form>
+                    </fieldset>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                  <!-- <button type="button" class="btn btn-primary">Guardar Cambios</button> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div> <!-- Ejercicio 13 -->
+          <div class="modal" tabindex="-1" role="dialog" id="ventanamodalApp13">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Ejercicio 13</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <fieldset>
+                        <legend>Calcular Serie</legend>
+                        <form action="" onsubmit="return AnularRefreshSubmit()">
+                          <label for="guess">Cantidad De Iteraciones:</label>
+                          <input type="text" id="NumIteraciones" placeholder="Ingresa un Número" maxlength="2" onkeypress="return KeyPressEnterosPositivos(event)" pattern="[0-9]+" title="Por favor, ingrese solo números enteros positivos" required>
+                          <input type="submit" class="BotonEjecutar" value="Calcular Serie" onclick="GetApp13()"></input>
+                          <div class="DivResultado" id="ResultadoApp13"></div>
+                        </form>
+                    </fieldset>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                  <!-- <button type="button" class="btn btn-primary">Guardar Cambios</button> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div> <!-- Ejercicio 14 -->
+          <div class="modal" tabindex="-1" role="dialog" id="ventanamodalApp14">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Ejercicio 14</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <fieldset>
+                        <legend>Calcular Pi</legend>
+                        <form action="" onsubmit="return AnularRefreshSubmit()">
+                          <label for="guess">Iteración a hasta Razón 1/N:</label>
+                          <input type="text" id="NumRazon" placeholder="Ingresa un Número" maxlength="5" onkeypress="return KeyPressEnterosPositivos(event)" pattern="[0-9]+" title="Por favor, ingrese solo números enteros positivos" required>
+                          <input type="submit" class="BotonEjecutar" value="Calcular Pi" onclick="GetApp14()"></input>
+                          <div class="DivResultado" id="ResultadoApp14"></div>
+                        </form>
+                    </fieldset>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                  <!-- <button type="button" class="btn btn-primary">Guardar Cambios</button> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div> <!-- Ejercicio 15 -->
+          <div class="modal" tabindex="-1" role="dialog" id="ventanamodalApp15">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Ejercicio 15</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <fieldset>
+                        <legend>Mostrar Serie de Fibonacci</legend>
+                        <form action="" onsubmit="return AnularRefreshSubmit()">
+                          <label for="">Cantidad De Terminos: </label>
+                          <input type="text" id="NumTerminosF" placeholder="Ingresa un Número" maxlength="2" onkeypress="return KeyPressEnterosPositivos(event)" pattern="[0-9]+" title="Por favor, ingrese solo números enteros positivos" required>
+                          <input type="submit" class="BotonEjecutar" value="Imprimir Serie Fibonacci" onclick="GetApp15()"></input>
+                          <div class="DivResultado" id="ResultadoApp15"></div>
+                        </form>
+                    </fieldset>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                  <!-- <button type="button" class="btn btn-primary">Guardar Cambios</button> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div> <!-- Ejercicio 16 -->
+          <div class="modal" tabindex="-1" role="dialog" id="ventanamodalApp16">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Ejercicio 16</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <fieldset>
+                        <legend>Editor De Texto</legend>
+                        <div class="ContenedorMenuEditorTexto">
+                          <ul class="MenuEditorTexto">
+                              <li><button onclick="formatText('bold')" class="fa-solid fa-bold"></button></li>
+                              <li><button onclick="formatText('italic')" class="fa-solid fa-italic"></button></li>
+                              <li><button onclick="alignText('left')" class="fa-solid fa-align-left"></button></li>
+                              <li><button onclick="alignText('center')" class="fa-solid fa-align-center"></button></li>
+                              <li><button onclick="alignText('right')" class="fa-solid fa-align-right"></button></li>
+                              <li><input type="color" class="BotonEjecutar" id="colorPicker" oninput="changeTextColor()"></li>
+                              <li>
+                                  <div class="ComboBoxEditorTexto">
+                                      <select id="fontSizeTxt" oninput="changeFontSize()">
+                                          <option value="8">Muy pequeño (8pt)</option>
+                                          <option value="10">Pequeño (10pt)</option>
+                                          <option value="12" selected>Normal (12pt)</option>
+                                          <option value="14">Mediano (14pt)</option>
+                                          <option value="16">Grande (16pt)</option>
+                                          <option value="18">Muy grande (18pt)</option>
+                                          <option value="24">Enorme (24pt)</option>
+                                          <!-- Agrega más opciones según sea necesario -->
+                                      </select>
+                                  </div>
+                              </li>
+                              <li>
+                                  <div class="ComboBoxEditorTexto">
+                                      <select id="fontFamilyTxt" oninput="changeFontType()">
+                                          <option value="Arial">Arial</option>
+                                          <option value="Times New Roman">Times New Roman</option>
+                                          <option value="Courier New">Courier New</option>
+                                          <option value="Verdana">Verdana</option>
+                                          <option value="Georgia">Georgia</option>
+                                          <option value="Helvetica">Helvetica</option>
+                                          <option value="Tahoma">Tahoma</option>
+                                          <option value="Palatino">Palatino</option>
+                                          <option value="Comic Sans MS">Comic Sans MS</option>
+                                          <option value="Garamond">Garamond</option>
+                                          <option value="Lucida Sans Unicode">Lucida Sans Unicode</option>
+                                          <option value="Impact">Impact</option>
+                                          <option value="Trebuchet MS">Trebuchet MS</option>
+                                          <option value="Century Gothic">Century Gothic</option>
+                                          <option value="Book Antiqua">Book Antiqua</option>
+                                          <!-- Agrega más opciones según sea necesario -->
+                                      </select>
+                                  </div>
+                              </li>
+                          </ul>
+                        </div>
+                      <hr>
+                      <div id="textEditor" contenteditable="true"></div>
+                    </fieldset>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                  <!-- <button type="button" class="btn btn-primary">Guardar Cambios</button> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div> <!-- Ejercicio 17 -->
+          <div class="modal" tabindex="-1" role="dialog" id="ventanamodalApp17">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Ejercicio 17</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <fieldset>
+                        <legend>Suma De Números De una Cadena</legend>
+                        <form action="" onsubmit="return AnularRefreshSubmit()">
+                          <label for="NumCadena">Ingrese la cadena con números:</label>
+                          <textarea id="NumCadena" placeholder="Ingrese la cadena"></textarea>
+                          <input type="submit" class="BotonEjecutar" value="Calcular Suma" onclick="GetApp17()"></input>
+                          <div class="DivResultado" id="ResultadoApp17"></div>
+                        </form>
+                    </fieldset>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                  <!-- <button type="button" class="btn btn-primary">Guardar Cambios</button> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <div> <!-- Ejercicio 18 -->
+          <div class="modal" tabindex="-1" role="dialog" id="ventanamodalApp18">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Ejercicio 18</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <fieldset>
+                        <legend>Operaciones En La Matriz</legend>
+                        <form action="" onsubmit="return AnularRefreshSubmit()">
+                          <div class="menu_horizontal">
+                            <div>
+                              <label for="">Número De Filas:</label>
+                              <input type="text" id="FilasMatriz" placeholder="Ingresa un Número" maxlength="2" oninput="DimensionarMatriz()" onkeypress="return KeyPressEnterosPositivos(event)" pattern="[0-9]+" title="Por favor, ingrese solo números enteros positivos" required>
+                            </div>
+                            <div>
+                              <label for="">Número De Columnas:</label>
+                              <input type="text" id="ColumnasMatriz" placeholder="Ingresa un Número" maxlength="1" oninput="DimensionarMatriz()" onkeypress="return KeyPressEnterosPositivos(event)" pattern="[0-9]+" title="Por favor, ingrese solo números enteros positivos" required>
+                            </div>
+                          </div>
+                          <div id="MatrizApp18"></div>
+                          <input type="button" class="BotonEjecutar" value="Calcular Operaciones" onclick="GetApp18()"></input>
+                          <div class="DivResultado" id="ResultadoApp18"></div>
+                        </form>
+                    </fieldset>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                  <!-- <button type="button" class="btn btn-primary">Guardar Cambios</button> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary"> <!-- MENU -->
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Ejercicios Individuales - 7228</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Estructuras Lineales
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#ventanamodalApp01">AnguloSol</a></li>
+                  <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#ventanamodalApp02">VolumenDeposito</a></li>
+                  <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#ventanamodalApp03">GranoPrecio</a></li>
+                  <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#ventanamodalApp04">SextoNumero</a></li>
+                  <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#ventanamodalApp05">Resistencias</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Estructuras Alternativas
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#ventanamodalApp06">Control Número</a></li>
+                  <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#ventanamodalApp07">Conversor Morse</a></li>
+                  <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#ventanamodalApp08">Menor Número Real</a></li>
+                  <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#ventanamodalApp09">Trigonométria</a></li>
+                  <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#ventanamodalApp10">Edad Persona</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Estructuras De Repetición
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#ventanamodalApp11">Piramide</a></li>
+                  <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#ventanamodalApp12">Adivina Número</a></li>
+                  <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#ventanamodalApp13">Serie</a></li>
+                  <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#ventanamodalApp14">Calcular Pi</a></li>
+                  <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#ventanamodalApp15">Fibonacci</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Otras Estructuras
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#ventanamodalApp16">Editor Texto</a></li>
+                  <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#ventanamodalApp17">Extraer Números</a></li>
+                  <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#ventanamodalApp18">Operaciones Matrices</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+    <main>
+      <img src="img/ChimborazoRiobamba.jpg" alt="" class="ImagenCuerpo">
+    </main>
+
+    <footer class="PiePagina">
+      <div class="PiePaginaG1">
+          <div class="BoxPP">
+              <figure>
+                  <a href="#"><img src="img/Escudo_ESPOCH.png" alt="Logo Empresa"></a>
+              </figure>
+          </div>
+          <div class="BoxPP">
+              <h2>Mi Misión</h2>
+              <p>Mi misión como estudiante de software es cultivar una sólida base de conocimientos técnicos y habilidades de programación para abordar desafíos complejos en el desarrollo de software. Me comprometo a explorar diversas metodologías de desarrollo, mantenerme actualizado con las últimas tendencias tecnológicas y desarrollar habilidades éticas y de resolución de problemas. Buscaré mejorar constantemente mis habilidades de comunicación y trabajar de manera colaborativa en equipos, con el objetivo de contribuir al avance de la tecnología y ser un profesional competente en el campo de la ingeniería de software.</p>
+          </div>
+          <address class="BoxPP">
+              <h2>Siguenos</h2>
+              <div class="RedSocial">
+                  <a href="https://wa.me/0996907332" target="_blank" class="fa-brands fa-whatsapp"></a>
+                  <a href="https://github.com/elritosan" target="_blank" class="fa-brands fa-github"></a>
+                  <a href="https://maps.app.goo.gl/H1TYaubgRRgvyygY9" target="_blank" class="fa-solid fa-location-dot"></a>
+              </div>
+          </address>
+          <div class="BoxPP"></div>
+      </div>
+      <div class="PiePaginaG2">
+          <small>&copy; 2024 <b>Hugo Vargas</b> - Todos los Derechos Reservados.</small>
+      </div>
+    </footer>
+</body>
+</html>
