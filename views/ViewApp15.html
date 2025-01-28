@@ -1,27 +1,26 @@
-<div> <!-- Ejercicio 14 -->
-    <div class="modal" tabindex="-1" role="dialog" id="ventanamodalApp14">
+<div> <!-- Ejercicio 15 -->
+    <div class="modal" tabindex="-1" role="dialog" id="ventanamodalApp15">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Ejercicio 14</h5>
+                    <h5 class="modal-title">Ejercicio 15</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <fieldset>
-                        <legend>Calcular Pi</legend>
+                        <legend>Calcular Serie Fibonacci</legend>
                         <form action="" onsubmit="return AnularRefreshSubmit()">
-                            <label for="guess">Iteración a hasta Razón 1/N:</label>
-                            <input type="text" id="NumRazon" placeholder="Ingresa un Número" maxlength="5"
+                            <label for="NumTerminosF">Número de términos:</label>
+                            <input type="text" id="NumTerminosF" placeholder="Ingresa un Número" maxlength="5"
                                 onkeypress="return KeyPressEnterosPositivos(event)" pattern="[0-9]+"
                                 title="Por favor, ingrese solo números enteros positivos" required>
-                            <input type="submit" class="BotonEjecutar" value="Calcular Pi" onclick="GetApp14()"></input>
-                            <div class="DivResultado" id="ResultadoApp14"></div>
+                            <input type="submit" class="BotonEjecutar" value="Calcular Serie" onclick="GetApp15()">
+                            <div class="DivResultado" id="ResultadoApp15"></div>
                         </form>
                     </fieldset>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                    <!-- <button type="button" class="btn btn-primary">Guardar Cambios</button> -->
                 </div>
             </div>
         </div>
