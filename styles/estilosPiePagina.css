@@ -1,0 +1,76 @@
+/* Estilo PiePagina */
+
+.PiePagina {
+    width: 100%;
+    background-color: rgb(12, 12, 12);
+}
+
+.PiePagina .PiePaginaG1 {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 25px 0px;
+}
+
+.PiePagina .PiePaginaG1 .BoxPP figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.PiePagina .PiePaginaG1 .BoxPP figure img{
+    width: 250px;
+}
+
+.PiePagina .PiePaginaG1 .BoxPP h2 {
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+.PiePagina .PiePaginaG1 .BoxPP p{
+    color: #efefef;
+    margin-bottom: 10px;
+}
+
+.PiePagina .PiePaginaG1 .RedSocial a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: #413737;
+    text-align: center;
+    transition: all 300ms ease;
+}
+
+.PiePagina .PiePaginaG1 .RedSocial a:hover{
+    color: aqua;
+}
+
+.PiePagina .PiePaginaG2{
+    background-color: #0a1a2a;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+
+.PiePagina .PiePaginaG2 small{
+    font-size: 15px;
+}
+
+@media screen and (max-width:800px) {
+    .PiePagina .PiePaginaG1 {
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+    }
+}

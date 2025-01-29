@@ -1,0 +1,67 @@
+nav {
+    max-width: 100%;
+    margin: auto;
+    background-color: #333;
+    font-size: 20px;
+    /* margin-top: 50px; */
+}
+
+.menu_horizontal {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding-left: 0;
+}
+
+.menu_horizontal > li:hover {
+    background-color: red;
+}
+
+.menu_vertical {
+    position: absolute;
+    display: none;
+    list-style: none;
+    width: 200px;
+    /* background-color: rgba(13, 192, 22, 0.5); */
+    padding-left: 0;
+}
+
+.menu_horizontal li:hover .menu_vertical {
+   display: block; 
+}
+
+.menu_vertical li:hover {
+    background-color: rgb(0, 0, 0);
+}
+
+/* Para Enlaces */
+
+.menu_horizontal > li > a {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.menu_vertical li a {
+    display: block;
+    color: white;
+    padding: 15px 15px 15px 20px;
+    text-decoration: none;
+}
+
+/* Para Botones */
+
+.menu_vertical li button {
+    display: block;
+    justify-content: left;
+    color: white;
+    padding: 15px 15px 15px 20px;
+    width: 100%;
+    background-color: rgba(132, 0, 255, 0.5);
+    border:  none;
+}
+
+.menu_vertical button:hover {
+    background-color: rgb(0, 0, 0);
+}

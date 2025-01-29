@@ -1,0 +1,28 @@
+<div> <!-- Ejercicio 6 -->
+    <div class="modal fade" tabindex="-1" role="dialog" id="ventanamodalApp06">
+        <div class="modal-dialog">
+            <div class="modal-content shadow-lg">
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title">Ejercicio 6 - Clasificar Nota</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <fieldset>
+                        <legend class="text-center">Clasificar Nota de Estudiante</legend>
+                        <form id="formApp06" onsubmit="return clasificarNotaApp06(event)">
+                            <div class="mb-3">
+                                <label for="notaApp06" class="form-label">Ingrese la nota del estudiante (0-100):</label>
+                                <input type="number" class="form-control" id="notaApp06" placeholder="Ejemplo: 85" min="0" max="100" required oninput="this.value = this.value.replace(/[^0-9]/g, '').slice(0, 3);">
+                            </div>
+                            <button type="submit" class="btn btn-success w-100">Clasificar Nota</button>
+                        </form>
+                        <div id="ResultadoApp06" class="alert mt-3" style="display: none;"></div>
+                    </fieldset>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

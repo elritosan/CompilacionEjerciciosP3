@@ -1,0 +1,28 @@
+<div> <!-- Ejercicio 15 -->
+    <div class="modal fade" tabindex="-1" role="dialog" id="ventanamodalApp15">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content shadow-lg rounded">
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title">Ejercicio 15 - Tabla de Multiplicar</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" style="max-height: 70vh; overflow-y: auto;">
+                    <fieldset class="border p-3 rounded">
+                        <legend class="h6 text-center">Generar Tabla</legend>
+                        <form action="" onsubmit="return AnularRefreshSubmit()">
+                            <div class="text-center mb-3">
+                                <button type="button" class="btn btn-dark" onclick="GetApp15()">Generar Tabla de Multiplicar</button>
+                            </div>
+                            <div id="ResultadoApp15" class="mt-4" style="overflow-x: auto;">
+                                <!-- Aquí se genera la tabla -->
+                            </div>
+                        </form>
+                    </fieldset>
+                </div>
+                <div class="modal-footer bg-light">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

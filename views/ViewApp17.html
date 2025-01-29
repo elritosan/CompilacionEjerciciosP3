@@ -1,0 +1,36 @@
+<div> <!-- Ejercicio 17 -->
+    <div class="modal fade" tabindex="-1" role="dialog" id="ventanamodalApp17">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content shadow-lg rounded-4 border-0">
+                <div class="modal-header bg-secondary text-light">
+                    <h5 class="modal-title">Ejercicio 17- Cadenas</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="text-center mb-5">
+                    <img src="https://cdn-icons-png.flaticon.com/128/1531/1531547.png" class="img-fluid shadow-sm">
+                </div>
+                <div class="modal-body p-4"
+                    style="background: url('https://via.placeholder.com/800x400') no-repeat center center; background-size: cover; border-radius: 0.5rem;">
+                    <fieldset class="p-3 rounded bg-white shadow-sm" style="background: rgba(255, 255, 255, 0.9);">
+                        <legend class="h5 text-center">Análisis de Cadenas</legend>
+                        <form action="" onsubmit="return AnularRefreshSubmit()">
+                            <div class="mb-3">
+                                <label for="Oracion" class="form-label">Ingrese una Oración:</label>
+                                <input type="text" id="Oracion" class="form-control" placeholder="Escribe una oración" maxlength="20" required>
+                            </div>
+                            <div class="text-center mb-3">
+                                <button type="button" class="btn btn-success btn-lg px-4 shadow" onclick="GetApp17()">Analizar Oración</button>
+                            </div>
+                            <div class="DivResultado mt-4" id="ResultadoApp17" style="font-weight: bold; color: #333; text-align: center;">
+                                <!-- Resultados aparecerán aquí -->
+                            </div>
+                        </form>
+                    </fieldset>
+                </div>
+                <div class="modal-footer bg-light">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

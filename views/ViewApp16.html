@@ -1,0 +1,28 @@
+<div> <!-- Ejercicio 16 -->
+    <div class="modal fade" tabindex="-1" role="dialog" id="ventanamodalApp16">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content shadow-lg rounded-4 border-0">
+                <div class="modal-header bg-dark text-light">
+                    <h5 class="modal-title">Ejercicio 16 - Interfaz de Voz</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-4"
+                    style="background: url('https://i.pinimg.com/736x/8a/69/c4/8a69c4d1a2dbf3a0d736652076390946.jpg') no-repeat center center; background-size: cover; border-radius: 0.5rem;">
+                    <fieldset class="p-3 rounded bg-white shadow-sm" style="background: rgba(255, 255, 255, 0.9);">
+                        <legend class="h5 text-center">Reconocimiento de Voz</legend>
+                        <p class="text-center">Presione el botón para iniciar el reconocimiento de voz:</p>
+                        <div class="text-center mb-3">
+                            <button class="btn btn-success btn-lg px-4 shadow" onclick="iniciarReconocimientoVoz()">Iniciar Reconocimiento</button>
+                        </div>
+                        <div class="DivResultado text-center" id="ResultadoApp16">
+                            <p class="mb-0"><b>Texto reconocido:</b> <span id="textoReconocido" class="text-danger">[Nada aún]</span></p>
+                        </div>
+                    </fieldset>
+                </div>
+                <div class="modal-footer bg-light">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

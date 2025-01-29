@@ -1,0 +1,33 @@
+<div> <!-- Ejercicio 13 -->
+    <div class="modal fade" tabindex="-1" role="dialog" id="ventanamodalApp13">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content shadow-lg rounded">
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title">Ejercicio 13 <br> Números de 3 cifras</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+                    <div class="text-center mb-3">
+                        <p>Programa para imprimir todos los números de 3 cifras que se puedan formar con los dígitos
+                            1,2,3,4 con la condición de que en cada número no haya dígitos iguales.</p>
+                    </div>
+                    <fieldset class="border p-3 rounded">
+                        <legend class="h6 text-center">De clic en el botón:</legend>
+                        <form action="" onsubmit="event.preventDefault(); GetApp13(); return false;" class="">
+                            <div class="text-center mb-3">
+                                <button type="submit" class="btn btn-success">Generar Números</button>
+                            </div>
+                            <div class="mt-4 text-center" id="ResultadoApp13" style="font-weight: bold; color: #333;">
+                                <p>Nada generado aún</p>
+                            </div>
+                        </form>
+                    </fieldset>
+                </div>
+                <div class="modal-footer bg-light">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/49ed2ef561.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="styles/estilosGlobal.css">
+
+    <script src="script/Event/AppEventos.js"></script>
+
+    <script src="script/JavaScript/App01.js"></script>
+    <script src="script/JavaScript/App02.js"></script>
+    <script src="script/JavaScript/App03.js"></script>
+    <script src="script/JavaScript/App04.js"></script>
+    <script src="script/JavaScript/App05.js"></script>
+    <script src="script/JavaScript/App06.js"></script>
+    <script src="script/JavaScript/App07.js"></script>
+    <script src="script/JavaScript/App08.js"></script>
+    <script src="script/JavaScript/App09.js"></script>
+    <script src="script/JavaScript/App10.js"></script>
+    <script src="script/JavaScript/App11.js"></script>
+    <script src="script/JavaScript/App12.js"></script>
+    <script src="script/JavaScript/App13.js"></script>
+    <script src="script/JavaScript/App14.js"></script>
+    <script src="script/JavaScript/App15.js"></script>
+    <script src="script/JavaScript/App16.js"></script>
+    <script src="script/JavaScript/App17.js"></script>
+    <script src="script/JavaScript/App18.js"></script>
+
+    <script src="script/CargasModulos.js"></script>
+    <title>Aplicaciones - 7056</title>
+</head>
+<body>
+    <div id="modulos-container"> <!-- Ventalas Modales Ejercicios --></div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Evelin Parra - 7056</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Estructuras Lineales
+                        </a>
+                        <ul class="dropdown-menu shadow-lg border-0 rounded-3 p-3" style="background-color: #343a40;">
+                            <li>
+                                <a class="dropdown-item text-light py-2 px-3 rounded" data-bs-toggle="modal"
+                                    data-bs-target="#ventanamodalApp01" style="transition: all 0.3s ease;">
+                                    <i class="fas fa-calculator me-2"></i> Área del Triángulo
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item text-light py-2 px-3 rounded" data-bs-toggle="modal"
+                                    data-bs-target="#ventanamodalApp02" style="transition: all 0.3s ease;">
+                                    <i class="fas fa-shapes me-2"></i> Área del Trapecio
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item text-light py-2 px-3 rounded" data-bs-toggle="modal"
+                                    data-bs-target="#ventanamodalApp03" style="transition: all 0.3s ease;">
+                                    <i class="fas fa-list-alt me-2"></i> Imprimir Operaciones
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item text-light py-2 px-3 rounded" data-bs-toggle="modal"
+                                    data-bs-target="#ventanamodalApp04" style="transition: all 0.3s ease;">
+                                    <i class="fas fa-sun me-2"></i> Ángulo de Incidencia del Sol
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item text-light py-2 px-3 rounded" data-bs-toggle="modal"
+                                    data-bs-target="#ventanamodalApp05" style="transition: all 0.3s ease;">
+                                    <i class="fas fa-sort-numeric-up me-2"></i> Sexto Número
+                                </a>
+                            </li>
+                        </ul>
+
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Estructuras Alternativas
+                        </a>
+                        <ul class="dropdown-menu shadow-lg border-0 rounded-3 p-3" style="background-color: #495057;">
+                            <li>
+                                <a class="dropdown-item text-light py-2 px-3 rounded" data-bs-toggle="modal"
+                                    data-bs-target="#ventanamodalApp06" style="transition: all 0.3s ease;">
+                                    <i class="fas fa-graduation-cap me-2"></i> Clasificador de Notas
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item text-light py-2 px-3 rounded" data-bs-toggle="modal"
+                                    data-bs-target="#ventanamodalApp07" style="transition: all 0.3s ease;">
+                                    <i class="fas fa-plane-departure me-2"></i> Fase de vuelo
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item text-light py-2 px-3 rounded" data-bs-toggle="modal"
+                                    data-bs-target="#ventanamodalApp08" style="transition: all 0.3s ease;">
+                                    <i class="fas fa-code me-2"></i> Suma de Binarios
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item text-light py-2 px-3 rounded" data-bs-toggle="modal"
+                                    data-bs-target="#ventanamodalApp09" style="transition: all 0.3s ease;">
+                                    <i class="fas fa-car me-2"></i> Alquiler de Vehículo
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item text-light py-2 px-3 rounded" data-bs-toggle="modal"
+                                    data-bs-target="#ventanamodalApp10" style="transition: all 0.3s ease;">
+                                    <i class="fas fa-birthday-cake me-2"></i> Edad de una Persona
+                                </a>
+                            </li>
+                        </ul>
+
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Estructuras De Repetición
+                        </a>
+                        <ul class="dropdown-menu shadow-lg border-0 rounded-3 p-3" style="background-color: #343a40;">
+                            <li>
+                                <a class="dropdown-item text-light py-2 px-3 rounded" data-bs-toggle="modal"
+                                    data-bs-target="#ventanamodalApp11" style="transition: all 0.3s ease;">
+                                    <i class="fas fa-list-alt me-2"></i> Leer número y cifra
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item text-light py-2 px-3 rounded" data-bs-toggle="modal"
+                                    data-bs-target="#ventanamodalApp12" style="transition: all 0.3s ease;">
+                                    <i class="fas fa-hashtag me-2"></i> Números Naturales
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item text-light py-2 px-3 rounded" data-bs-toggle="modal"
+                                    data-bs-target="#ventanamodalApp13" style="transition: all 0.3s ease;">
+                                    <i class="fas fa-cogs me-2"></i> Números de 3 cifras
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item text-light py-2 px-3 rounded" data-bs-toggle="modal"
+                                    data-bs-target="#ventanamodalApp14" style="transition: all 0.3s ease;">
+                                    <i class="fas fa-cogs me-2"></i> Números de 2 cifras
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item text-light py-2 px-3 rounded" data-bs-toggle="modal"
+                                    data-bs-target="#ventanamodalApp15" style="transition: all 0.3s ease;">
+                                    <i class="fas fa-table me-2"></i> Tabla del 1*12
+                                </a>
+                            </li>
+                        </ul>
+
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Otras Estructuras
+                        </a>
+                        <ul class="dropdown-menu shadow-lg border-0 rounded-3 p-3" style="background-color: #495057;">
+                            <li>
+                                <a class="dropdown-item text-light py-2 px-3 rounded" data-bs-toggle="modal"
+                                    data-bs-target="#ventanamodalApp16" style="transition: all 0.3s ease;">
+                                    <i class="fas fa-microphone-alt me-2"></i> Interfaz de voz
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item text-light py-2 px-3 rounded" data-bs-toggle="modal"
+                                    data-bs-target="#ventanamodalApp17" style="transition: all 0.3s ease;">
+                                    <i class="fas fa-text-width me-2"></i> Cadenas
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item text-light py-2 px-3 rounded" data-bs-toggle="modal"
+                                    data-bs-target="#ventanamodalApp18" style="transition: all 0.3s ease;">
+                                    <i class="fas fa-random me-2"></i> Programa de librería Random
+                                </a>
+                            </li>
+                        </ul>
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-section">
+        <img src="https://images.unsplash.com/photo-1504639725590-34d0984388bd?w=500&auto=format&fit=crop&q=60"
+            alt="Background" class="hero-image">
+            
+        <div class="hero-text">
+            <img src="img/Sello_ESPOCH_Blanco.png" alt="sello" class="img-fluid shadow-sm">
+            <h1>Aplicaciones Informáticas I </h1><h2>Ejercicios Individuales</h2>
+        </div>
+    </header>
+
+    <footer class="bg-dark text-light text-center py-4">
+        <div class="container">
+            <p class="mb-1">&copy; 2025 <b>Evelin Parra</b> - Todos los Derechos Reservados.</p>
+            <div>
+                <a href="https://wa.me/0984325839" class="text-light mx-2"><i class="fab fa-whatsapp fa-lg"></i></a>
+                <a href="https://github.com/" class="text-light mx-2"><i class="fab fa-github fa-lg"></i></a>
+                <a href="https://maps.app.goo.gl/CfLsn36xoHppBACo9" class="text-light mx-2"><i class="fas fa-map-marker-alt fa-lg"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
